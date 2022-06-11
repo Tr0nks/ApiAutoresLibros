@@ -115,7 +115,7 @@ namespace WebApiAutores.Controllers
 
         }
 
-        [HttpDelete("{id:int}")]  // api/autores/2
+        [HttpDelete("{id:int}")]  // api/autores/2//
         public async Task<ActionResult> Delete(int id)
         {
             var existe = await context.Autores.AnyAsync(x => x.Id == id);
